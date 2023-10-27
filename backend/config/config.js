@@ -16,7 +16,7 @@ if (error) {
   throw new Error(`Config validation error:${error.message}`);
 }
 module.exports = {
-  port: 8082,
+  port: envVars.PORT,
   mongoose: {
     url: envVars.MONGODB_URL,
   },
